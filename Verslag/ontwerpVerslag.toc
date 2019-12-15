@@ -1,3 +1,8 @@
 \contentsline {section}{\numberline {1}Specificaties sensormodule}{3}{section.1}
 \contentsline {section}{\numberline {2}De complete sensornode}{3}{section.2}
 \contentsline {section}{\numberline {3}Elektrochemische CO-sensor }{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Potentiostat}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Transimpedantieversterker}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Laagdoorlaatfilter}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Thermometer}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}NTC thermistor}{5}{subsection.4.1}

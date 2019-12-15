@@ -39,6 +39,7 @@
 \usepackage{relsize}
 \usepackage{gensymb}
 \usepackage{textcomp}
+\usepackage{lipsum}
 
 \linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
 
@@ -102,7 +103,7 @@
 	\begin{center}
 		\begin{tabular}{ | m{5cm} | m{5cm}| } 
 			\hline
-			\multicolumn{2}{|c|}{Specificaties voor de implementaties van CO sensoren} \\
+			\multicolumn{2}{|c|}{Specificaties voor de implementatie van de CO sensor} \\
 			\hline
 			Meetbereik a: & 0 - 200 \textit{ppm} \\
 			\hline
@@ -137,112 +138,59 @@
 		\label{fig::sensorNode_dia}
 	\end{figure}
 	\newpage
-	\section{Elektrochemische CO-sensor }
-	In dit hoofdstuk wordt er besproken wat er nodig is om de elektrochemische CO-sensor te laten werken en wat de nodige signaalverwerking is om de sensor correct uit te kunnen lezen. Als elektrochemische CO-gassensor is er gekozen voor de \textit{3SP\_CO\_1000 package 110-102}
+	\section{Elektrochemische CO-sensor } \label{sec::EG_CO_sensor}
+	In dit hoofdstuk wordt er besproken wat er nodig is om de elektrochemische CO-sensor te laten werken en wat de nodige signaalverwerking is om de sensor correct uit te kunnen lezen. Als elektrochemische CO-gassensor is er gekozen voor de \textit{3SP\_CO\_1000 package 110-102}.
+
+	\subsection{Potentiostat} \label{subsec::potentiostat}
+	De gekozen elektrochemische CO-gassensor heeft 3 elektroden: een \textit{sensing elektrode} (SE), een \textit{counter elektrode} (CE) en een \textit{referentie elektrode} (RE) \cite{datasheet sensor}.
+	\\ Kort samengevat: bij de SE vindt er een reactie met het doelgas (CO) plaats, bij de CE volgt een reactie op het resultaat van de reactie bij de SE en de RE zorgt ervoor dat er geen spanningsverschil ontstaat tijdens de reacties. Hiervoor moet de RE verbonden zijn met de SE. Om het spanningsverschil tussen de RE en de SE gelijk te houden is er een potentiostat schakeling nodig \cite{datasheet sensor}. Afhankelijk van het type sensor is er een bepaalde bias-spanning nodig tussen de RE en de SE \cite{SGX Application note}, in het geval van de \textit{3SP\_CO\_1000 package 110-102} is deze 0V \cite{datasheet sensor}.
+	\begin{figure}[h!]
+		\centering
+		\hspace*{-3cm} 
+		\includegraphics[width=1.4\linewidth]{../Media/unbiasedSensorCircuit.png}
+		\caption{Voorbeeld van een een potetiostat schakeling met 0V bias spanning en een transimpendantieversterker \cite{SGX Application note}}
+		\label{fig::EG_schakeling}
+	\end{figure}
+	\newpage
+	OP-AMP IC1 behoudt het potentiaal van RE, V{\small ref} en past het geschikte potentiaal V{\small count} op CE om V{\small ref} gelijk te houden aan V{\small set}. Dit potentiaal zal veranderen omdat wanneer de CO-concentratie verandert omdat het stroom levert aan de CE om de outputstroom van de SE te balanceren. \\
+	TR1 is een \textit{p-channel FET}, deze zorgt ervoor dat het spanningsverschil tussen de RE en SE 0V blijft wanneer er geen voeding aanwezig is. Een lage spanning op de \textit{gate} van de \textit{FET} zorgt er voor dat deze gaat geleiden en daarvoor V{\small ref} = V{\small set} blijft \cite{SGX Application note}.
+	
+	\subsection{Transimpedantieversterker} \label{subsec::transimpedantieversterker}
+	De output van de elektrochemische CO-gassensor is een stroom. De waarde die van een ADC uitgelezen kan worden is afhankelijk van de spanning. De output zal dus moeten worden omgezet naar het spanningsdomein. Hiervoor wordt er gebruik gemaakt van een transimpedantieversterker.
+	\subsection{Laagdoorlaatfilter} \label{subsec::laagdoorlaatfilter}
+	Om de ruis aan de uitgang te beperken is er een filter nodig. Aangezien de CO-concentratie niet heel veel veranderd over tijd, heeft het signaal een lage frequentie. Verder is het ook handig om de effecten van elektromagnetische interventie te beperken.
+	
+	\section{Thermometer} \label{sec::thermometer}
+	In dit hoofdstuk wordt er besproken hoe de temperatuur gemeten gaat worden en wat de nodige signaal verwerking is om deze correct uit te kunnen lezen.
+	\subsection{NTC thermistor} \label{subsec::NTC_thermistor}
+	Voor het meten van de temperatuur is er gekozen om een NTC thermistor te gebruiken. Een thermistor is een type halfgeleider waarbij de temperatuur een groter effect heeft op de weerstandswaarde dan bij "standaard" weerstanden, m.a.w. het heeft een groter (of juist kleiner in het geval van een negatief) temperatuurcoëfficiënt dan "standaardaard" weerstanden \cite{thermistor}.
 	%----------------------------------------------------------------------------------------
 	\newpage
 	
 	\begin{thebibliography}{9}
-		\bibliographystyle{IEEEtran}
-		\bibitem{Effecten Koolmonoxide}
-		Mariët Ticheler, 
-		2008 [Bekeken in september 2019],
-		[Rapport],
-		"Koolmonoxide",
-		Beschikbaar: \url{https://www.leefmilieu.nl/sites/www3.leefmilieu.nl/files/imported/pdf_s/MGM_2008-02_koolmonoxide.pdf}
-		
-		\bibitem{RIVM huurwoningen}
-		M. van Bruggen, J.T.M. Gram, E.L. Boels, L. Ruhaak, M. Mooij,
-		RIVM,
-		2009 [Bekeken in september 2019],
-		[Rapport],
-		"Koolmonoxide in huurwoningen in de Randstad",
-		Beschikbaar: \url{https://www.rivm.nl/bibliotheek/rapporten/609300009.pdf}
-		
-		\bibitem{Blootstelling aan CO}
-		M. Mooij,
-		RIVM,
-		2008 [Bekeken in september 2019],
-		[Rapport],
-		"Chronische blootstelling aan koolmonoxide, tabel 2.2",
-		Beschikbaar: \url{https://www.rivm.nl/bibliotheek/rapporten/609300005.pdf}
-		
-		\bibitem{NO2_Amsterdam}
-		RIVM, J.p. Wesseling, S. van der Zee, P.L. Nguyen,
-		2008 [Bekeken in september 2019],
-		[Rapport],
-		"Gemeten en berekende NO2-concentraties in Amsterdam in 2008",
-		Beschikbaar: \url{https://www.rivm.nl/bibliotheek/rapporten/680705015.pdf}
-		
-		\bibitem{grafiek}
-		Rijksinstituut voor Volksgezondheid
-		2019[Bekeken in september 2019],
-		[Online],
-		"Meetgegevens NO2",
-		Beschikbaar: \url{https://www.luchtmeetnet.nl}
-		
-		\bibitem{B4DF}
-		Alphasense
-		2018[Bekeken in september 2019],
+		\bibitem{datasheet sensor}
+		SPEC SENSORS,
+		april 2017 [bekeken in november 2019],
 		[Datasheet],
-		"Datasheet",
-		Beschikbaar: \url{http://www.alphasense.com/WEB1213/wp-content/uploads/2018/12/NO2B43F.pdf}
+		"3SP\_CO\_1000 package 110-102",
+		Beschikbaar:
+		\url{https://www.spec-sensors.com/wp-content/uploads/2016/04/3SP_CO_1000-P-Package-110-102.pdf}
 		
-		\bibitem{xmega}
-		978-90-484-3527-2,
-		W. Dolman,
-		2016[Bekeken in september 2019],
-		[boek],
-		"De taal C en de Xmega (2e druk)",
-		Culemborg,
-		Free Musketeers uitgeverij en productie
+		\bibitem{SGX Application note}
+		SGX SENSORTECH,
+		juli 2016 [bekeken in november 2019],
+		[Application Note],
+		"Electrochemical Sensors Application Note 2Design of Electronics for Electrochemical Gas Sensors",
+		Beschikbaar:
+		\url{https://www.sgxsensortech.com/content/uploads/2014/08/A1A-EC_SENSORS_AN2-Design-of-Electronics-for-EC-Sensors-V4.pdf}
 		
-		\bibitem{SGX Intro}
-		SGX Sensortech,
-		01-02-2007 [Bekeken in oktober 2019],
+		\bibitem{thermistor}
+		Omega Engineering Inc.,
+		augustus 2018 [bekeken in december 2019],
 		[Online],
-		"Introduction to Electrochemical (EC) Gas Sensors",
-		Beschikbaar: \url{https://www.sgxsensortech.com/content/uploads/2014/08/Introduction-to-Electrochemical-EC-Gas-Sensors1.pdf}
-		
-		\bibitem{MO sensoren}
-		N. Barsan, U. Weimar,
-		Institute of Physical and Theoretical Chemistry, University of Tuebingen,
-		[Bekeken in september 2019],
-		[Artikel],
-		"Fundamentals of Metal Oxide Gas Sensors",
-		Beschikbaar: \url{https://www.google.com/url?sa=t\&rct=j\&q=&esrc=s\&source=web\&cd=9\&ved=2ahUKEwjDwY__icTlAhVGJFAKHceND0gQFjAIegQIABAC\&url=https%3A%2F%2Fwww.ama-science.org%2Fproceedings%2FgetFile%2FBGx1&usg=AOvVaw0HkmkgTDH_rmiX19YCcaHD}
-		
-		\newpage
-		\bibitem{Sensor keuze}
-		H. Li, X. Mu, Y. Yang, A. J. Mason,
-		IEEE,
-		2014 [Bekeken in september 2019],
-		[Artikel],
-		"Low power Multi-mode Electrochemical Gas
-		Sensor Array System for Wearable Health and
-		Safety Monitoring",
-		Beschikbaar: \url{https://ieeexplore.ieee.org/document/6851860}
-		
-		\bibitem{Thermistor}
-		Ametherm Inc.
-		2015 [Bekeken in november 2019],
-		[Online],
-		"NTC Thermistors – Temperature Measurement With A Wheatstone Bridge",
-		Beschikbaar: \url{https://www.ametherm.com/thermistor/ntc-thermistors-temperature-measurement-with-wheatstone-bridge}
-		
-		\bibitem{SGX datasheet}
-		SGX Sensortech,
-		[Bekeken in oktober 2019],
-		[Datasheet],
-		"SGX-4CO Industrial Carbon Monoxide Sensor",
-		Beschikbaar: \url{https://www.sgxsensortech.com/content/uploads/2014/07/DS-0138-SGX-4CO-V2.pdf}
+		"What is a Thermistor and how does it work?",
+		Beschikbaar:
+		\url{https://www.omega.com/en-us/resources/thermistor}
 
-		\bibitem{Hatech}
-		HATECH gasdetectietechniek,
-		[Bekeken in oktober 2019],
-		[Online],
-		"Onderhoud gasdetectoren",
-		Beschikbaar: \url{https://www.hatechgas.com/onderhoud/geen-kalibratie-nodig/}	
-		
 	\end{thebibliography}
 \end{document}

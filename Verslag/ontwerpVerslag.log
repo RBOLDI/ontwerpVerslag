@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.26)  10 DEC 2019 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.26)  15 DEC 2019 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,34 +757,38 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count109
+)
 (./ontwerpVerslag.aux)
 \openout1 = `ontwerpVerslag.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 79.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Info: Redefining \microtypecontext on input line 78.
+LaTeX Info: Redefining \microtypecontext on input line 79.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -800,16 +804,16 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count110
 \scratchdimen=\dimen123
 \scratchbox=\box31
-\nofMPsegments=\count110
-\nofMParguments=\count111
+\nofMPsegments=\count111
+\nofMParguments=\count112
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count112
+\MPscratchCnt=\count113
 \MPscratchDim=\dimen124
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -830,7 +834,7 @@ e
 ))
 \big@size=\dimen125
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -838,11 +842,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count115
+\c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
 (./ontwerpVerslag.out) (./ontwerpVerslag.out)
 \@outlinefile=\write3
@@ -852,61 +856,51 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ppl/m/n --> TS1/ppl/bx/n on input line 78.
-Package gensymb Info: Math companion symbols declared on input line 78.
-LaTeX Info: Redefining \degree on input line 78.
-LaTeX Info: Redefining \celsius on input line 78.
+(Font)                  TS1/ppl/m/n --> TS1/ppl/bx/n on input line 79.
+Package gensymb Info: Math companion symbols declared on input line 79.
+LaTeX Info: Redefining \degree on input line 79.
+LaTeX Info: Redefining \celsius on input line 79.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 78.
-LaTeX Info: Redefining \ohm on input line 78.
-Package gensymb Info: Using \textohm for \ohm on input line 78.
-Package gensymb Info: Using \textmu for \micro on input line 78.
+erthousand on input line 79.
+LaTeX Info: Redefining \ohm on input line 79.
+Package gensymb Info: Using \textohm for \ohm on input line 79.
+Package gensymb Info: Using \textmu for \micro on input line 79.
 
 
 Class hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)              is ignored on input line 83.
+(hyperref)              is ignored on input line 84.
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 84.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 85.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 99.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 100.
  (./ontwerpVerslag.toc
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
-)
-\tf@toc=\write4
-\openout4 = `ontwerpVerslag.toc'.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 4.
 
-
-[2]
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 103.
-
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 103
-.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 103
-.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 103
-.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 103
-.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -915,26 +909,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 103.
-
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-<../Media/sensorNode_dia.png, id=33, 794.97pt x 252.945pt>
+))
+\tf@toc=\write4
+\openout4 = `ontwerpVerslag.toc'.
+
+ [2]
+<../Media/sensorNode_dia.png, id=58, 794.97pt x 252.945pt>
 File: ../Media/sensorNode_dia.png Graphic file (type png)
 <use ../Media/sensorNode_dia.png>
-Package pdftex.def Info: ../Media/sensorNode_dia.png  used on input line 135.
+Package pdftex.def Info: ../Media/sensorNode_dia.png  used on input line 136.
 (pdftex.def)             Requested size: 611.9989pt x 194.7335pt.
 
-Overfull \hbox (140.26839pt too wide) in paragraph at lines 134--136
+Overfull \hbox (140.26839pt too wide) in paragraph at lines 135--137
  []|  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 136.
-[3 <../Media/sensorNode_dia.png>] [4]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 152.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 137.
+[3 <../Media/sensorNode_dia.png>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 144.
+<../Media/unbiasedSensorCircuit.png, id=68, 847.165pt x 346.29375pt>
+File: ../Media/unbiasedSensorCircuit.png Graphic file (type png)
+<use ../Media/unbiasedSensorCircuit.png>
+Package pdftex.def Info: ../Media/unbiasedSensorCircuit.png  used on input line
+ 150.
+(pdftex.def)             Requested size: 503.9978pt x 206.01826pt.
+
+Overfull \hbox (60.72005pt too wide) in paragraph at lines 149--151
+ []|  [] 
+ []
+
+[4 <../Media/unbiasedSensorCircuit.png>] [5]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 177.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -945,128 +956,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--153
-\T1/cmtt/m/n/10.95 leefmilieu . nl / files / imported / pdf _ s / MGM _ 2008-[]
-02 _ koolmonoxide .
+Underfull \hbox (badness 10000) in paragraph at lines 172--178
+[]\T1/ppl/m/n/10.95 (+20) SPEC SEN-SORS, april 2017 [bekeken in novem-ber 2019]
+,
  []
 
 
-Underfull \hbox (badness 4582) in paragraph at lines 171--176
-\T1/ppl/m/n/10.95 (+20) in septem-ber 2019], [Rap-port], "Geme-ten en berek-end
-e NO2-
+Underfull \hbox (badness 10000) in paragraph at lines 172--178
+\T1/ppl/m/n/10.95 (+20) [Datasheet], "3SP_CO_1000 pack-age 110-102", Beschik-ba
+ar:
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 178--183
-[]\T1/ppl/m/n/10.95 (+20) Rijksinstituut voor Volks-ge-zond-heid 2019[Bekeken i
-n septem-ber
+Underfull \hbox (badness 10000) in paragraph at lines 172--178
+[]$\T1/cmtt/m/n/10.95 https : / / www . spec-[]sensors . com / wp-[]content / u
+ploads / 2016 / 04 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--190
-\T1/ppl/m/n/10.95 (+20) Beschik-baar: []$\T1/cmtt/m/n/10.95 http : / / www . al
-phasense . com / WEB1213 / wp-[]content /
+Underfull \hbox (badness 10000) in paragraph at lines 180--186
+\T1/cmtt/m/n/10.95 / / www . sgxsensortech . com / content / uploads / 2014 / 0
+8 / A1A-[]EC _
  []
 
-
-Underfull \hbox (badness 6461) in paragraph at lines 201--206
-[]\T1/ppl/m/n/10.95 (+20) SGX Sen-sortech, 01-02-2007 [Bekeken in ok-to-ber 201
-9], [On-
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 201--206
-\T1/ppl/m/n/10.95 (+20) baar: []$\T1/cmtt/m/n/10.95 https : / / www . sgxsensor
-tech . com / content / uploads / 2014 / 08 /
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 208--214
-\T1/ppl/m/n/10.95 (+20) tikel], "Fun-da-men-tals of Metal Ox-ide Gas Sen-sors",
- Beschik-baar:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--214
-[]$\T1/cmtt/m/n/10.95 https : / / www . google . com / url ? sa = t & rct = j &
- q = &esrc = s & source = web &
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--214
-\T1/cmtt/m/n/10.95 cd = 9 & ved = 2ahUKEwjDwY _ _icTlAhVGJFAKHceND0gQFjAIegQIAB
-AC & url =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--214
-\T1/cmtt/m/n/10.95 https % 3A % 2F % 2Fwww . ama-[]science . org % 2Fproceeding
-s % 2FgetFile %
- []
-
-[5]
-Underfull \hbox (badness 5771) in paragraph at lines 227--232
-\T1/ppl/m/n/10.95 (+20) Ther-mis-tors ^^U Tem-per-a-ture Mea-sure-ment With A W
-heat-stone
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--232
-\T1/ppl/m/n/10.95 (+20) Bridge", Beschik-baar: []$\T1/cmtt/m/n/10.95 https : / 
-/ www . ametherm . com / thermistor /
- []
-
-
-Overfull \hbox (12.0616pt too wide) in paragraph at lines 227--232
-\T1/cmtt/m/n/10.95 ntc-[]thermistors-[]temperature-[]measurement-[]with-[]wheat
-stone-[]bridge$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
-[]\T1/ppl/m/n/10.95 (+20) SGX Sen-sortech, [Bekeken in ok-to-ber 2019], [Datash
-eet],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
-\T1/ppl/m/n/10.95 (+20) "SGX-4CO In-dus-trial Car-bon Monox-ide Sen-sor", Besch
-ik-baar:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
-[]$\T1/cmtt/m/n/10.95 https : / / www . sgxsensortech . com / content / uploads
- / 2014 / 07 /
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
  (./ontwerpVerslag.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
 Package rerunfilecheck Info: File `ontwerpVerslag.out' has not changed.
-(rerunfilecheck)             Checksum: DBF80EF58022F9E42A09A748B64FA8C8;180.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
+(rerunfilecheck)             Checksum: 627E865B816EEFA667B1C30822916D66;491.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 9370 strings out of 494923
- 144488 string characters out of 6180741
- 250082 words of memory out of 5000000
- 12433 multiletter control sequences out of 15000+600000
- 33939 words of font info for 106 fonts, out of 8000000 for 9000
+ 9587 strings out of 494923
+ 147200 string characters out of 6180741
+ 347027 words of memory out of 5000000
+ 12630 multiletter control sequences out of 15000+600000
+ 36405 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,9n,40p,369b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,42p,672b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rowan/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600
 pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on ontwerpVerslag.pdf (6 pages, 103132 bytes).
+Output written on ontwerpVerslag.pdf (6 pages, 128194 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 34334 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 34891 words of extra memory for PDF output out of 35830 (max. 10000000)
 

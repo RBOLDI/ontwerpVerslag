@@ -1,3 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Specificaties sensormodule}{}% 1
 \BOOKMARK [1][-]{section.2}{De complete sensornode}{}% 2
 \BOOKMARK [1][-]{section.3}{Elektrochemische CO-sensor }{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Potentiostat}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Transimpedantieversterker}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Laagdoorlaatfilter}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Thermometer}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{NTC thermistor}{section.4}% 8
