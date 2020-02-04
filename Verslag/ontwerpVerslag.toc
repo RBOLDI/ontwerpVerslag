@@ -4,5 +4,8 @@
 \contentsline {subsection}{\numberline {3.1}Potentiostat}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Transimpedantieversterker}{5}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Laagdoorlaatfilter}{5}{subsection.3.3}
-\contentsline {section}{\numberline {4}Thermometer}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}NTC thermistor}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {3.4}Simulaties}{6}{subsection.3.4}
+\contentsline {section}{\numberline {4}Thermometer}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}NTC thermistor}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Niet lineair}{7}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Simulaties}{9}{subsection.4.2}
